@@ -10,7 +10,7 @@ from google.adk.tools.agent_tool import AgentTool
 
 from .specialized_agents.preview_artifact.agent import root_agent as preview_artifact_agent_instance
 from .specialized_agents.diarienummer.agent import root_agent as diarienummer_agent_instance
-
+from support_agents.arendehanterings_agent.agent import arendehanterings_agent
 
 
 # --- Bygglov Team Lead Agent Definition ---
@@ -27,6 +27,7 @@ bygglov_agent = Agent(
         # Lägg till AgentTool för ALLA specialister som denna lead behöver
         AgentTool(agent=preview_artifact_agent_instance), # PreviewArtefactAgent
         AgentTool(agent=diarienummer_agent_instance), # Lägg till den nya DiarienummerAgent
+        AgentTool(agent=arendehanterings_agent)
     ]
 )
 
