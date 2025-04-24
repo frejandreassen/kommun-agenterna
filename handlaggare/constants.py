@@ -1,0 +1,6 @@
+STATE_INITIAL_QUERY = "initial_user_query"
+STATE_CASE_DETAILS = "bygglov:case_details"
+STATE_ACTION_RESULTS = "bygglov:action_results"
+STATE_DIARIE_INFO = "bygglov:diarie_info"
+STATE_REPORT_ARTIFACT_NAME = "bygglov:html_receipt_filename"
+STATE_FINAL_OUTPUT_FOR_USER = "bygglov:final_output"
